@@ -1,0 +1,123 @@
+<mat-drawer-container class="order-container" autosize>
+    <mat-drawer #drawer class="order-sidenav" mode="over" position="end">
+        <div class="cart-block">
+            <div class="cart-title">Shopping Cart</div>
+            <div class="cart-sub-title">Your Items</div>
+            <div class="cart-items-block">
+                <div class="cart-items-list" *ngFor="let item of cartArray;">
+                    <div class="cart-item-img-block">
+                        <div class="cart-item-img" [ngClass]="item.itemBgImg" [ngStyle]="{'width': '50%'}"></div>
+                    </div>
+                    <div class="cart-item-title-block">
+                        <div class="cart-item-title" >{{item.itemName}}</div>
+                        <div class="cart-item-quantity">Qty: {{item.itemQty}}</div>
+                    </div>
+                    <div class="cart-item-price-block">
+                        <div class="cart-item-price">&#8377; {{item.itemPrice}}</div>
+                        <div class="cart-item-remove-btn-block">
+                            <div matRipple class="cart-item-remove-btn" matTooltip="Remove from Cart" matTooltipClass="tooltip-red" (click)="removeItmFrmCrt(item.itemUrl, item.itemNumber, item.itemBgImg)"><mat-icon class="cart-remove-btn-icon">cancel</mat-icon></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-items-msg-block" [ngStyle]="{'display': itemCount > 0 ? 'none' : 'flex'}">
+                    <div class="no-items-msg">Please select you items.</div>
+                    <div class="no-items-bg-img"></div>
+                </div>
+            </div>
+            <div class="cart-items-total-block">
+                <div class="cart-item-total">
+                    <div class="cart-items-total-title">Total:</div>
+                    <div class="cart-items-total-value">&#8377; {{totalCartValue}}</div>
+                </div>                
+            </div>
+        </div>
+    </mat-drawer>
+    
+    <div class="toolbar-container">
+        <div class="toolbar-block">
+            <div class="toolbar-block-1">Shopping <br>Stores</div>
+            <div class="toolbar-block-2"><mat-icon [matBadge]="itemCount" class="toolbar-cart-icon" aria-hidden="false" aria-label="Shopping Cart icon" (click)="drawer.toggle()">shopping_cart</mat-icon></div>
+        </div>
+    </div>
+    <div class="order-body-container">
+        <div class="order-body-block">
+            <div class="catergory-block">
+                <button mat-button [matMenuTriggerFor]="menu" aria-label="Shop by Category menu">Shop By Category <mat-icon>keyboard_arrow_down</mat-icon></button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item (click)="itemDisperse('/soaps')">
+                      <span>Hand Made Soaps</span>
+                    </button>
+                    <button mat-menu-item (click)="itemDisperse('/diyas')">
+                      <span>Hand Made Diyas</span>
+                    </button>
+                    <button mat-menu-item (click)="itemDisperse('/garlics')">
+                      <span>Peeled Garlics</span>
+                    </button>
+                    <button mat-menu-item (click)="itemDisperse('/peas')">
+                        <span>Peeled Peas</span>
+                    </button>
+                    <button mat-menu-item (click)="itemDisperse('/dairy')">
+                        <span>Dairy Products</span>
+                    </button>
+                </mat-menu>
+            </div>
+            <div class="items-block">
+                <!-- -------------------------------------------------------- New ----------------------------------------------------- -->
+                <div class="item-lists">
+                    <div class="item-list-1">
+                        <div class="item" *ngFor='let itemData of disperseItem'>
+                            <!-- <div class="item-bg" [ngClass]="itemData.itemClass"></div> -->
+                            <div class="item-bg-block">
+                                <div class="item-bg" [ngClass]="itemData.itemClass"></div>
+                            </div>
+                            
+                            <div class="item-content">
+                                <div class="item-title">
+                                    <div class="item-name">{{itemData.itemName}}</div>
+                                    <div class="item-value">&#8377; {{itemData.itemPrice}}</div>
+                                </div>
+                                <div class="item-details">{{itemData.itemDescription}}</div>
+                                <!-- <div class="item-qty" [ngClass]="'item'+itemData.itemClass"> -->
+                                <div class="item-qty" [ngStyle]="{'display': itemData.itemAddToCartDisabled ? 'none' : 'flex'}">
+                                    <div class="item-qty-minus" (click)="itemQty('minus', itemData.itemNumber)">-</div>
+                                    <!-- <div class="item-qty-value">{{itemCount[itemData.itemNumber - 1]}}</div> -->
+                                    <div class="item-qty-value">{{itemData.itemQtyValue}}</div>
+                                    <div class="item-qty-plus" (click)="itemQty('plus', itemData.itemNumber)">+</div>
+                                </div>
+                                <div class="item-add-btn" [ngStyle]="{'display': itemData.itemAddToCartDisabled ? 'none' : 'flex'}">
+                                    <button mat-flat-button color="primary" [disabled]="itemData.itemAddToCartDisabled" (click)='addToCart(itemData.itemNumber)'>Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="item-added-to-cart-block" [ngStyle]="{'display': !itemData.itemAddToCartDisabled ? 'none' : 'flex'}">
+                                <div class="item-added-to-cart-text">
+                                    <mat-icon class="item-added-to-cart-icon">shopping_cart</mat-icon> Item Added To Cart
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proceed-block">
+                        <div class="proceed-btn">
+                            <button mat-raised-button class="proceed-btn-color" (click)="drawer.toggle()">Checkout Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-page-footer-container">
+        <div class="footer-block-1">
+            <div class="footer-title">Shopping <br>Stores</div>
+            <div class="footer-copyright"></div>
+        </div>
+        <div class="footer-block-2">
+            <div class="footer-contents">
+                <div class="footer-content">About</div>
+                <div class="footer-content">Contact Us</div>
+            </div>
+            <div class="footer-contents">
+                <div class="footer-content">Feedback</div>
+                <div class="footer-content">Terms & Condition</div>
+            </div>
+        </div>
+    </div>
+  </mat-drawer-container>

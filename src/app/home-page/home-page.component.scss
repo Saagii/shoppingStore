@@ -1,0 +1,642 @@
+.home-page-container {
+    float: left;
+    width: 100%;
+}
+
+.home-page-banner-container {
+    float: left;
+    height: 600px;
+    width: 100%;
+    background: url('../../assets/images/white-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner-toolbar-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-toolbar {
+    width: 95%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-contents-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.banner-heading {
+    font-size: 130px;
+    line-height: 1;
+    width: 85%;
+    margin-top: 90px;
+    // margin-left: 90px;
+    /* text-transform: uppercase; */
+    // text-shadow: 2px 8px 13px #0000008a;
+    font-family: 'Prata', serif;
+}
+
+.banner-sub-heading {
+    font-size: 24px;
+    line-height: 1;
+    width: 85%;
+    float: left;
+    margin-top: 10px;
+    // margin-left: 90px;
+    /* text-transform: uppercase; */
+    // text-shadow: 2px 8px 13px #0000008a;
+    font-family: 'Prata', serif;
+    margin-left: 10px;
+}
+
+.home-page-body-container {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    background-image: linear-gradient(134deg, rgba(1, 1, 1,0.02) 0%, rgba(1, 1, 1,0.02) 16%,transparent 16%, transparent 76%,rgba(58, 58, 58,0.02) 76%, rgba(58, 58, 58,0.02) 100%),linear-gradient(215deg, rgba(166, 166, 166,0.02) 0%, rgba(166, 166, 166,0.02) 33%,transparent 33%, transparent 79%,rgba(111, 111, 111,0.02) 79%, rgba(111, 111, 111,0.02) 100%),linear-gradient(303deg, rgba(215, 215, 215,0.02) 0%, rgba(215, 215, 215,0.02) 7%,transparent 7%, transparent 90%,rgba(192, 192, 192,0.02) 90%, rgba(192, 192, 192,0.02) 100%),linear-gradient(302deg, rgba(113, 113, 113,0.02) 0%, rgba(113, 113, 113,0.02) 34%,transparent 34%, transparent 73%,rgba(65, 65, 65,0.02) 73%, rgba(65, 65, 65,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+
+// ------------------------ SOAPS CSS ---------------------------
+.soaps-block {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0px 50px 0px;
+}
+
+.soaps-block-1 {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.soaps-img-p {
+    width: 59%;
+    background: url('../../assets/images/soaps/soap-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.soaps-img-s {
+    width: 39%;
+}
+
+.soaps-img-s-1 {
+    width: 100%;
+    float: left;
+    height: 173px;
+    background: url('../../assets/images/soaps/soap-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.soaps-img-s-2 {
+    width: 100%;
+    float: left;
+    clear: both;
+    height: 174px;
+    margin-top: 3px;
+    background: url('../../assets/images/soaps/soap-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.soaps-block-2 {
+    width: 45%;
+    background: white;
+    padding: 25px 0px;
+    box-shadow: 6px 11px 40px 3px #d3d3d34d;
+}
+
+.soaps-title {
+    font-size: 28px;
+    float: left;
+    width: 90%;
+    padding-bottom: 40px;
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 1;
+    text-align: center;
+}
+
+.soaps-content {
+    width: 90%;
+    font-size: 18px;
+    float: left;
+    font-family: 'Prata', serif;
+    margin-left: 20px;
+    line-height: 2;
+    color: #292525;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.soaps-shop-btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.soaps-shop-btn {
+    border: 1px solid black;
+}
+
+// ----------------------------- GARLIC CSS --------------------------------
+.garlics-block {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0px 50px 0px;
+}
+
+.garlics-block-1 {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.garlics-img-p {
+    width: 59%;
+    background: url('../../assets/images/garlics/garlic-peeled-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.garlics-img-s {
+    width: 39%;
+}
+
+.garlics-img-s-1 {
+    width: 100%;
+    float: left;
+    height: 173px;
+    background: url('../../assets/images/garlics/garlic-peeled-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.garlics-img-s-2 {
+    width: 100%;
+    float: left;
+    clear: both;
+    height: 174px;
+    margin-top: 3px;
+    background: url('../../assets/images/garlics/garlic-unpeeled-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.garlics-block-2 {
+    width: 45%;
+    background: white;
+    padding: 25px 0px;
+    box-shadow: 6px 11px 40px 3px #d3d3d34d;
+}
+
+.garlics-title {
+    font-size: 28px;
+    float: left;
+    width: 90%;
+    padding-bottom: 40px;
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 1;
+    text-align: center;
+}
+
+.garlics-content {
+    width: 90%;
+    font-size: 18px;
+    float: left;
+    font-family: 'Prata', serif;
+    margin-left: 20px;
+    line-height: 2;
+    color: #292525;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.garlics-shop-btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.garlics-shop-btn {
+    border: 1px solid black;
+}
+
+// ----------------------------- PEAS CSS --------------------------------
+.peas-block {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0px 50px 0px;
+}
+
+.peas-block-1 {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.peas-img-p {
+    width: 59%;
+    background: url('../../assets/images/peas/peas-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.peas-img-s {
+    width: 39%;
+}
+
+.peas-img-s-1 {
+    width: 100%;
+    float: left;
+    height: 173px;
+    background: url('../../assets/images/peas/peas-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.peas-img-s-2 {
+    width: 100%;
+    float: left;
+    clear: both;
+    height: 174px;
+    margin-top: 3px;
+    background: url('../../assets/images/peas/peas-5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.peas-block-2 {
+    width: 45%;
+    background: white;
+    padding: 25px 0px;
+    box-shadow: 6px 11px 40px 3px #d3d3d34d;
+}
+
+.peas-title {
+    font-size: 28px;
+    float: left;
+    width: 90%;
+    padding-bottom: 40px;
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 1;
+    text-align: center;
+}
+
+.peas-content {
+    width: 90%;
+    font-size: 18px;
+    float: left;
+    font-family: 'Prata', serif;
+    margin-left: 20px;
+    line-height: 2;
+    color: #292525;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.peas-shop-btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.peas-shop-btn {
+    border: 1px solid black;
+}
+
+// ----------------------------- DIYA CSS --------------------------------
+.diyas-block {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0px 50px 0px;
+}
+
+.diyas-block-1 {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.diyas-img-p {
+    width: 59%;
+    background: url('../../assets/images/diyas/diya-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.diyas-img-s {
+    width: 39%;
+}
+
+.diyas-img-s-1 {
+    width: 100%;
+    float: left;
+    height: 173px;
+    background: url('../../assets/images/diyas/diya-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.diyas-img-s-2 {
+    width: 100%;
+    float: left;
+    clear: both;
+    height: 174px;
+    margin-top: 3px;
+    background: url('../../assets/images/diyas/diya-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.diyas-block-2 {
+    width: 45%;
+    background: white;
+    padding: 25px 0px;
+    box-shadow: 6px 11px 40px 3px #d3d3d34d;
+}
+
+.diyas-title {
+    font-size: 28px;
+    float: left;
+    width: 90%;
+    padding-bottom: 40px;
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 1;
+    text-align: center;
+}
+
+.diyas-content {
+    width: 90%;
+    font-size: 18px;
+    float: left;
+    font-family: 'Prata', serif;
+    margin-left: 20px;
+    line-height: 2;
+    color: #292525;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.diyas-shop-btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.diyas-shop-btn {
+    border: 1px solid black;
+}
+
+
+// ----------------------------- Dairy CSS --------------------------------
+.dairy-block {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0px 50px 0px;
+}
+
+.dairy-block-1 {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.dairy-img-p {
+    width: 59%;
+    background: url('../../assets/images/dairy/butter-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dairy-img-s {
+    width: 39%;
+}
+
+.dairy-img-s-1 {
+    width: 100%;
+    float: left;
+    height: 173px;
+    background: url('../../assets/images/dairy/paneer-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dairy-img-s-2 {
+    width: 100%;
+    float: left;
+    clear: both;
+    height: 174px;
+    margin-top: 3px;
+    background: url('../../assets/images/dairy/butter-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dairy-block-2 {
+    width: 45%;
+    background: white;
+    padding: 25px 0px;
+    box-shadow: 6px 11px 40px 3px #d3d3d34d;
+}
+
+.dairy-title {
+    font-size: 28px;
+    float: left;
+    width: 90%;
+    padding-bottom: 40px;
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 1;
+    text-align: center;
+}
+
+.dairy-content {
+    width: 90%;
+    font-size: 18px;
+    float: left;
+    font-family: 'Prata', serif;
+    margin-left: 20px;
+    line-height: 2;
+    color: #292525;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.dairy-shop-btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.dairy-shop-btn {
+    border: 1px solid black;
+}
+
+
+// ------------------- Footer CSS --------------------
+.home-page-footer-container {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+    background-image: radial-gradient(circle at 82% 83%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 78% 87%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 59% 16%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 37% 59%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 73% 69%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 85% 62%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 12% 97%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 33% 35%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 16% 59%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 76% 24%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 79% 94%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 98% 67%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 6% 5%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 25% 43%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 68% 85%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 9% 81%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 8% 6%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 33% 43%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 32% 30%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 93% 91%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 84% 22%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),linear-gradient(90deg, rgb(25, 19, 85),rgb(64, 141, 126));
+}
+
+.footer-block-1 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-block-2 {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-title {
+    width: 60%;
+    font-family: 'Prata', serif;
+    font-size: 40px;
+    line-height: 1;
+    color: white;
+    text-shadow: 6px 11px 40px 3px #0000004d;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contents {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    color: white;
+}
+
+// Common CSS for Devices
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+.home-page-banner-container {
+    height: 450px;
+}
+
+.banner-heading {
+    width: 80%;
+    font-size: 75px;
+}
+
+.banner-sub-heading {
+    width: 80%;
+    margin-left: 0px;
+    font-size: 26px;
+}
+
+.diyas-block,
+.garlics-block,
+.peas-block,
+.dairy-block  {
+    padding: 20px 0px 50px 0px;
+}
+
+.soaps-block-1,
+.soaps-block-2,
+.garlics-block-1,
+.garlics-block-2,
+.diyas-block-1,
+.diyas-block-2,
+.peas-block-1,
+.peas-block-2,
+.dairy-block-1,
+.dairy-block-2   {
+    width: 100%;
+}
+
+.garlic-title,
+.peas-title {
+    font-size: 24px;
+}
+
+.footer-block-1,
+.footer-block-2 {
+    width: 100%;
+}
+
+.footer-title {
+    text-align: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    color: #e6ffc0;
+}
+
+
+
+}
